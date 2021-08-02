@@ -14,13 +14,21 @@ window.onload = function () {
             })
         }
 
-        // document.getElementById('contacts').onclick = function() {
-        //     window.scroll({
-        //         top: 2000,
-        //         left: 2000,
-        //         behavior: 'smooth'
-        //     })
-        // }
+        document.getElementById('jobs').onclick = function() {
+            window.scroll({
+                top: 4000,
+                left: 4000,
+                behavior: 'smooth'
+            })
+        }
+
+        document.getElementById('contacts').onclick = function() {
+            window.scroll({
+                top: 5000,
+                left: 5000,
+                behavior: 'smooth'
+            })
+        }
 
     }
 }
@@ -59,69 +67,3 @@ $(window).scroll(function () {
     });
 });
 
-// const list = document.querySelector("ul");
-// const body = document.querySelector("body");
-
-// const ids = [
-//     {
-//         id: "whatwedo",
-//         text: "What we do",
-//     },
-//     {
-//         id: "whoweare",
-//         text: "Who we are",
-//     },
-//     {
-//         id: "jobs",
-//         text: "Jobs",
-//     },
-//     {
-//         id: "news",
-//         text: "News",
-//     },
-//     {
-//         id: "contacts",
-//         text: "Contacts",
-//     },
-// ]
-
-// ids.forEach(({ id, text, background }) => {
-//     const item = document.createElement('li');
-//     const a = document.createElement('a');
-//     const section = document.createElement('section');
-//     a.setAttribute('data-id', id);
-//     a.setAttribute('href', `#${id}`);
-//     a.innerHTML = text;
-
-//     section.setAttribute('id', id);
-//     section.style.backgroundColor = background;
-
-//     item.appendChild(a);
-//     list.appendChild(item);
-
-//     body.appendChild(section);
-// });
-
-// let currentId;
-// currentId = ids[0].id;
-
-// window.addEventListener('scroll', () => {
-//     const { scrollY } = window;
-
-//     ids.forEach(({ id }) => {
-//         const element = document.getElementById(id);
-//         const { offsetTop, offsetHeight } = element;
-
-//         if (
-//             offsetTop - (offsetHeight / 2) <= scrollY && (offsetTop + offsetHeight / 2) > scrollY
-//         ) {
-//             const prevAnchor = document.querySelector(`a[data-id=${currentId}]`);
-//             prevAnchor.classList.remove('active');
-
-//             const anchor = document.querySelector(`a[data-id=${id}]`);
-//             anchor.classList.add('active');
-
-//             currentId = id;
-//         }
-//     });
-// })
